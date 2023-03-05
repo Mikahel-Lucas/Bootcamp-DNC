@@ -35,7 +35,7 @@ body{
     font-weight:600;
     color:white;
     text-decoration: none;
-
+    
 }
 
     #principal div a:hover{
@@ -45,9 +45,9 @@ body{
 #menu{
     display: flex;
     width: 45%;
+    margin-left: 5%;
     justify-content: space-around;
     align-items: center;
-    margin-left: 5%;
 }
 
 #principal button {
@@ -116,6 +116,7 @@ form{
     flex-direction:column;
     margin-top: 10px;
     margin-bottom: 10px;
+  
 
 }
 
@@ -126,6 +127,7 @@ border: 0px;
 font-size: 20px;
 padding: 10px;
 background-color: rgba(255, 255, 255, 0.9);
+
 }
 
 form label{
@@ -137,19 +139,21 @@ form input::placeholder{
     color: rgba(57, 57, 57, 0.5);
 }
 
-.checkbox-itens label{
+.checkbox-items label{
     font-size: 25px;
 }
 
-.checkbox-itens{
-    display:flex;
-    justify-content:space-around;
+.checkbox-items{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
+
 
 input[type="checkbox"]{
     transform: scale(1.7);
 }
+
 
 input[type="submit"]{
     background-color: #0C70F2E5;
@@ -160,4 +164,163 @@ input[type="submit"]{
     margin-top: 100px;
     box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
     cursor: pointer;
+}
+
+/* footer */
+
+footer{
+    width:100%;
+    background-color: var(--azul-dnc);
+}
+
+footer .linha1{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+    margin-left: 0px;
+    padding: 0px;
+    font-family: var(--fonte-padrão);
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;  
+}
+
+footer h5{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800px;
+    font-family: var(--fonte-padrão);
+    color: white;
+    background-color: var(--preto-dnc);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 15px;
+}
+
+footer ul li{
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--fonte-padrão);
+    color: white;
+    margin: 20px 0px 20px 0px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .endereço {
+    font-size: 18px;
+    font-weight: 600px;
+    font-family: var(--fonte-padrão);
+    color: white;
+    text-align: center;
+    width: 25%;
+
+}
+
+footer ul li a:hover{
+    color: var(--cinza-hover);
+
+}
+
+footer .linha2 {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 10px 0px; 
+    padding: 10px;
+}
+
+footer .linha2 a {
+    font-family: var(--fonte-padrão);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    
+}
+
+footer .linha2 a:first-child {
+    border-right: 2px solid white; 
+}
+
+footer .linha2 a:hover {
+    color: var(--cinza-hover);
+
+}
+
+@media only screen and (max-width: 600px){
+    
+
+    /* menu */
+    #principal{
+        display:flex;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #menu{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        justify-content: space-between;
+    }  
+
+    #menu a{
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        justify-content: space-around;
+    }
+
+    #principal button{
+        width: 100%;
+        margin: 0px;
+    }
+
+    /* section */
+
+    section h1 {
+        font-size: 38px;     
+    }
+
+    section h2 {
+        font-size: 20px;
+        padding-right: 15px;
+        padding-left: 15px; 
+        justify-content: center;
+    }
+
+    form {
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .checkbox-items label{
+        font-size: 17px;
+    }
+
+/* footer */
+
+footer .linha1{
+    flex-direction: column;
+
+}
+
+footer .endereço{
+    width: 95%;
+    margin-bottom: 20px;
+}
+
 }
